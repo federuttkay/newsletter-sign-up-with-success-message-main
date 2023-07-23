@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+
+		<title>
+			Frontend Mentor | Newsletter sign-up form with success message
+		</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="main.js" defer></script>
+	</head>
+	<body>
+		<div class="card" id="main-card">
+			<div class="card__img">
+				<img
+					src="assets/images/illustration-sign-up-mobile.svg"
+					srcset="
+						assets/images/illustration-sign-up-mobile.svg   944w,
+						assets/images/illustration-sign-up-desktop.svg 2000w
+					"
+					alt=""
+				/>
+			</div>
+			<div class="card__content">
+				<h1 class="card__title">Stay updated!</h1>
+				<p class="card__description">
+					Join 60,000+ product managers receiving monthly updates on:
+				</p>
+				<ul class="card__list">
+					<li>Product discovery and building what matters</li>
+					<li>Measuring to ensure updates are a success</li>
+					<li>And much more!</li>
+				</ul>
+				<form action="" class="card__form">
+					<div class="flex">
+						<label for="email-input">Email address</label>
+						<p class="error-message" id="error-message">Valid email required</p>
+					</div>
+					<input
+						type="email"
+						placeholder="email@company.com"
+						maxlength="100"
+						name="email"
+						required
+						id="email-input"
+					/>
+					<button class="suscribe-btn" type="submit">
+						Subscribe to monthly newsletter
+					</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="success-card none" id="success-card">
+			<img src="assets/images/icon-success.svg" alt="" class="tick-icon" />
+			<h1 class="card__title">Thanks for subscribing!</h1>
+			<p class="success-p">
+				A confirmation email has been sent to
+				<span id="email-message">ash@loremcompany.com</span>. Please open it and
+				click the button inside to confirm your subscription.
+			</p>
+			<button id="dismiss-btn">Dismiss message</button>
+		</div>
+
+		<!-- <div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Federico Ruttkay</a>.
+		</div> -->
+	</body>
+</html>
